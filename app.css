@@ -1,0 +1,149 @@
+
+:root {
+    background: url('app.png') no-repeat;
+    background-position: center;
+    background-attachment: fixed;
+    background-size: cover;
+    font-family: Arial, Helvetica, sans-serif;
+    min-height: 100vh;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+   box-sizing: border-box;
+}
+
+.app {
+    background: url(app.png) no-repeat;
+    background-position: center;
+    background-attachment: fixed;
+    background-size: cover;  
+    width: 100%;
+    margin: 50px auto;
+    padding: 3rem;
+    border-radius: 15px;
+}
+.search {
+    display: flex;
+    align-items: center;
+}
+
+input[type="text"] {
+    flex: 2;
+    padding: 20px;
+    border: 2px solid rgb(29, 198, 29);
+    border-radius: 15px;
+    font-size: 1rem;
+    height: 3.5rem;
+}
+
+.search-btn {
+    background-color: rgb(29, 198, 29);
+    border: none;
+    padding: 15px;
+    border-radius: 15px;
+    cursor: pointer;
+    color:white;
+    margin-left: 10px;
+}
+.search-btn:hover {
+    background-color:rgb(227, 216, 14);
+}
+
+.city-date-section {
+    margin-top: 1rem;
+    margin-bottom: 1rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.city-date-section .city {
+    color:rgb(29, 198, 29);
+    font-size: 4rem;
+}
+
+.city-date-section .date {
+    background-color: rgb(227, 216, 14);
+    padding: 5px 10px;
+    border-radius: 15px;
+}
+
+.temperature-info {
+    width: 60%;
+    border-radius: 15px;
+    display: flex;
+    margin: 1rem auto;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+
+.temperature-info .temp {
+    font-size: 5rem;
+}
+
+.temperature-info .description {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+    font-size: 3rem;
+}
+
+.temperature-info .material-symbols-outlined {
+    font-size: 3rem;
+}
+
+
+.additional-info {
+    margin-top: 3rem;
+    display: flex;
+    justify-content: space-around;
+}
+
+.wind-info,
+.humidity-info,
+.visibility-info {
+    width: 150px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    gap: 15px;
+    border-radius: 15px;
+    padding-top: 1rem ;
+    margin: 0.05rem;
+    box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+}
+.wind-info{
+    background: url(wind.jpg) no-repeat;
+    background-position: center;
+    background-attachment: fixed;
+    background-size: cover;  
+}
+.humidity-info{
+    background: url(humid.jpg) no-repeat;
+    background-position: center;
+    background-attachment: fixed;
+    background-size: cover;  
+}
+.visibility-info{
+    background: url(vis.jpg) no-repeat;
+    background-position: center;
+    background-attachment: fixed;
+    background-size: cover;  
+    
+}
+.additional-info .material-symbols-outlined {
+    font-size: 3rem;
+}
+
+.wind-info div,
+.humidity-info div,
+.visibility-info div {
+    text-align: center;
+}
